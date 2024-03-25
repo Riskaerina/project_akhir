@@ -11,7 +11,7 @@ func GetValidationErrorMsg(fieldError validator.FieldError) string {
 	case "required":
 		return fmt.Sprintf("%s is required", fieldError.Field())
 	case "email":
-		return fmt.Sprintf("Invalid %s address", fieldError.Field())
+		return fmt.Sprintf("Invalid %s email address", fieldError.Field())
 	case "min":
 		return fmt.Sprintf("Your %s must be have at least %s characters long", fieldError.Field(), fieldError.Param())
 	case "gt":
